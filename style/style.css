@@ -3,6 +3,10 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+p, h1, h2,h3 {
+    color: white;
+}
+
 .first_section {
     position: relative;
     background: #161922;
@@ -55,7 +59,7 @@ a:hover {
 
 }
 
-.wrapper_soc_icons svg:hover {
+.wrapper_soc_icons.svg:hover {
     fill: #00C853;
     transition: all 0.3s ease;
 }
@@ -65,7 +69,12 @@ a:hover {
     height: auto;
 }
 
-#soc_icon:hover {
+#soc_icon:hover path {
     fill: #00C853;
     transition: all 0.3s ease;
+}
+
+#green_headline {
+    color: #00C853;
+    text-transform: uppercase;
 }
