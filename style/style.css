@@ -196,10 +196,81 @@ a:hover {
 
 .card {
     display: flex;
-    background-color:red;
-    border: 1px;
-    border-color: #161922;
+    flex-direction: column;
+    justify-content: center;
+    background: #191D28;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.35);
     padding: 29px;
     width: 25%;
     height: 50%;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.35);
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
+
+.card:hover p {
+    color: #00C853;
+    transition: all 0.3s ease;
+}
+
+.card p {
+    position: relative;
+    display: block;
+    margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 400;
+    font-size: 1em;
+    transition: all 0.3s ease;
+}
+
+.third_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: #161922;
+}
+
+.third_content_wrapper {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    height: 100%;
+}
+
+.third_green_headline {
+    display: inline-flex; 
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    height: auto;
+}
+
+.third_green_headline h3 {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 500;
+    margin: 0;
+    color: #00C853;
+}
+
+.third_green_headline hr {
+    background-color: #00C853;
+    border: 0px;
+    height: 2px;
+    width: 30px;
+    margin-right: 22px;
+    margin-left: 0;
 }
