@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic');
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    font-family: 'Montserrat';
+    font-size: 16px;
+}
+
+h2, h3, p {
+    color: #464646;
+    margin: 0;
+}
+
+.fix_section {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: #F1F1F1;
+    padding-top: 50px;
+    padding-left: 5%;
+    padding-bottom: 50px;
+}
+
+a {
+    color: #000000;
+    font-weight: 600;
+    font-size: 1em;
+    width: auto;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.big_headline {
+    font-size: 5em;
+    color: #5C5C5C;
+    font-weight: 600;
+} 
+
+.fix_main {
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    width: 35%;
+}
+
+.fix_wrapper {
+    position: absolute;
+    background-color: #EDEDED;
+    bottom: 0;
+    left: 0;
+    height: 45%;
+    width: 100%;
+}
+
+.nofix {
+    position: absolute;
+    display: flex;
+    right: 5%;
+    height: 200vh;
+    width: 55%;
+    background-color: #F5F5F5;
+    padding: 50px 4%;
+    flex-direction: column;
+
+}
+
+.work_wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+}
+
+.image_work {
+    position: relative;
+    display: flex;
+    background-color: #D7F1DD;
+    height: auto;
+    width: 45%;
+}
+
+.image_work svg {
+    margin:auto;
+    height: auto;
+    width: 5rem;
+}
+
+.text_work {
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    align-content: flex-start;
+    margin: 50px 0;
+    padding: 0 70px;
+}
+
+.headline_work {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.article_work {
+    font-weight: 400;
+    font-family: 'PT Sans';
+    margin-bottom: 30px;
+}
+
+.more_portfolio {
+    display: inline-block;
+    position: relative;
+    color: #00C853;
+    transition: all 0.3s ease;
+}
