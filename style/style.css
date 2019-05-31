@@ -31,7 +31,6 @@ nav {
     position: fixed;
     top: 46px;
     width: 50%;
-    max-width: 580px;
     height: auto;
     display: inline-flex;
     flex-direction: row;
@@ -58,9 +57,9 @@ a:hover {
     position: fixed;
     flex-direction: column;
     justify-content: space-between;
-    left: 60px;
     width: auto;
     height: 222px;
+    z-index: 999;
 }
 
 #soc_icon {
@@ -74,13 +73,13 @@ a:hover {
     transition: all 0.3s ease;
 }
 
-.first_content_wrapper {
+.content_wrapper {
     display: flex;
     position: relative;
     flex-direction: column;
     align-content: center;
     justify-content: center;
-    width: 60%;
+    width: 70%;
     height: 100%;
 }
 
@@ -132,26 +131,19 @@ a:hover {
 
 .arrow_button {
     position: absolute;
+    width: 2.5em;
     bottom: 5%;
 }
 
 .second_section {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     background-color: #191D28;
-}
-
-.second_content_wrapper {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    justify-content: center;
-    width: 60%;
-    height: 100%;
 }
 
 .second_green_headline {
@@ -186,7 +178,6 @@ a:hover {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    flex-wrap: nowrap;
     margin-top: 50px;
     width: 100%;
     height: 45%;
@@ -196,8 +187,10 @@ a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
     background: #191D28;
     padding: 29px;
+    margin: 0 10px;
     width: 25%;
     height: 40%;
     transition: all 0.3s ease;
@@ -223,4 +216,146 @@ a:hover {
     font-weight: 500;
     font-size: 1em;
     transition: all 0.3s ease;
+}
+
+.card img {
+    margin: 0 auto;
+    width: 3em;
+    height: auto;
+}
+
+/* Laptop */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+    .wrapper_soc_icons {
+        left: 60px;
+    }
+      
+    .content_wrapper {
+        width: 60%;
+        height: 100%;
+    }
+
+}
+
+/* Tablets */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+    .wrapper_soc_icons {
+        left: 60px;
+    }
+
+}
+
+/* Other */
+@media only screen
+    and (min-device-width: 500px) 
+    and (max-device-width: 767px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+
+    .wrapper_soc_icons {
+        left: 60px;
+    }
+
+}
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 500px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    p {
+        font-size: 1.2em;
+    }
+
+    nav {
+        width: 70%;
+        top: 100px;
+    }
+
+    nav a {
+        font-size: 2em;
+    }
+    
+    .green_headline h3 {
+        font-size: 2.2em;
+    }
+    
+    .green_headline hr {
+        height: 3px;
+        margin: auto 22px;
+    }
+    
+    .first_text_wrapper h1 {
+        font-size: 6em;
+    }
+    
+    .first_text_wrapper h2 {
+        font-size: 2em;
+        font-weight: 400; 
+    }
+
+    .arrow_button {
+        bottom: 15%;
+        width: 50px;
+    }
+
+    .wrapper_soc_icons {
+        flex-direction: row;
+        bottom: 30px;
+        margin: 0 auto;
+        width: 50%;
+        height: auto;
+    }
+
+    #soc_icon {
+        width: 42px;
+    }
+
+    .card {
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: auto;
+        margin: 0;
+        margin-bottom: 35px;
+        background-color: #161922;
+        width: 100%;
+        height: auto;
+    }
+
+    .card img {
+        width: 64px;
+        height: auto;
+        margin-left: 50px;
+        margin-right: 0;
+    }
+
+    .card p {
+        margin-left: 50px;
+        margin-right: 0;
+        margin-top: auto;
+        margin-bottom: auto;
+        font-size: 2em;
+        font-weight: 400;
+    }
+
+    .card_wrapper {
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+    }
+
+    .content_wrapper {
+        padding: 50px;
+        height: 100%;
+    }
 }
