@@ -266,7 +266,7 @@ a:hover {
 
 /* Portrait and Landscape */
 @media only screen 
-  and (min-device-width: 240px) 
+  and (min-device-width: 200px) 
   and (max-device-width: 500px)
   and (-webkit-min-device-pixel-ratio: 2) {
 
