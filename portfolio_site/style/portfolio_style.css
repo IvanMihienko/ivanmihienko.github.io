@@ -19,9 +19,6 @@ h2, h3, p {
     height: 100%;
     width: 100%;
     background-color: #F1F1F1;
-    padding-top: 50px;
-    padding-left: 5%;
-    padding-bottom: 50px;
 }
 
 a {
@@ -44,27 +41,42 @@ a {
     display: inline-flex;
     flex-direction: column;
     justify-content: flex-start;
-    height: 100%;
-    width: 35%;
+    margin-top: 50px;
+    margin-left: 5%;
+    height: auto;
+    width: auto;
 }
 
-.fix_wrapper {
-    position: absolute;
+.fix_bg {
+    position: relative;
     background-color: #EDEDED;
-    bottom: 0;
-    left: 0;
     height: 45%;
     width: 100%;
+}
+
+.fix-bg:after {
+    content:'';
+    position: absolute;
+    background-color: #00C853;
+    top: 0;
+    width: 50px;
+    height: 100px;
+}
+
+.fix-bg p {
+    position: relative;
+    margin-top: 50px;
+    margin-left: 5%;
 }
 
 .nofix {
     position: absolute;
     display: flex;
     right: 5%;
-    height: 200vh;
-    width: 55%;
+    height: auto;
+    width: 50%;
     background-color: #F5F5F5;
-    padding: 50px 4%;
+    padding: 25px 50px;
     flex-direction: column;
 }
 
@@ -72,6 +84,8 @@ a {
     position: relative;
     display: flex;
     flex-direction: row;
+    background-color: #F1F1F1;
+    margin: 25px 0;
     width: 100%;
     height: auto;
 }
@@ -85,9 +99,10 @@ a {
 }
 
 .image_work svg {
-    margin:auto;
+    position: relative;
+    margin: auto;
     height: auto;
-    width: 5rem;
+    width: 80px;
 }
 
 .text_work {
@@ -95,8 +110,9 @@ a {
     display: inline-flex;
     flex-direction: column;
     align-content: flex-start;
+    width: 30%;
     margin: 50px 0;
-    padding: 0 70px;
+    padding: 0 26px;
 }
 
 .headline_work {
