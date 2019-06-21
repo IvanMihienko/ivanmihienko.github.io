@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic');
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     display: flex;
     flex-direction: row;
@@ -11,7 +15,6 @@ body {
     background-color: #F9FAFA;
     font-family: 'Montserrat';
     font-size: 14px;
-    transition: all 0.3s ease;
 }
 
 nav {
@@ -40,7 +43,6 @@ nav a:hover {
     width: 100%;
     height: 100%;
     padding: 0;
-
 }
 
 h1 {
@@ -213,3 +215,124 @@ span::after {
     opacity: 0;
     transition: all 0.3s ease;
 }
+
+@media screen 
+  and (min-width: 100px) 
+  and (max-width: 768px) {
+    
+    .card_wrapper {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-content: center;
+    }
+
+    .card {
+        margin: 0;
+        margin-bottom: 100px;
+        width: 100%;
+        height: 35%;
+    }
+
+  }
+
+  @media screen 
+  and (min-width: 100px) 
+  and (max-width: 480px) {
+    
+    body {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: center;
+        padding: 10% 5%;
+    }
+
+    h1 {
+        color: #464646;
+        text-align: left;
+        margin: 0;
+        font-size: 3em;
+        font-weight: 600;
+        margin-bottom: 5%;
+    }
+    
+    span {
+        position: relative;
+        text-align: right;
+        width: auto;
+        color: #7D7D7D;
+        font-weight: 600;
+        font-size: 1em;
+    }
+
+    .fix_section {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-content: center;
+        margin: 20% 0;
+        height: auto;
+        width: 100%;
+    }
+
+    .fix_main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        width: auto;
+        height: auto;
+        transform: none;
+    }
+
+    .main_section {
+        position: relative;    
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+
+    nav {
+        position: relative;
+        left: 0;
+    }
+
+    nav a:after {
+        content: '';
+        position: absolute;
+        top: 7px;
+        width: 70%;
+        height: 2px;
+        margin-left: 15px;
+        background-color: #464646;
+    }
+
+    .copyright {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    
+    .copyright svg {
+        position: relative;
+        right: 0;
+        bottom: 0;
+    }
+
+    .card .image svg path {
+        fill: rgb(0, 200, 83);
+    }
+
+
+
+  }

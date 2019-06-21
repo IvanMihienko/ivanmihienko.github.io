@@ -219,8 +219,7 @@ a:hover {
 
 /* Laptop */
 @media screen 
-  and (min-device-width: 1200px) 
-  and (-webkit-min-device-pixel-ratio: 1) {
+  and (min-device-width: 1200px)and (-webkit-min-device-pixel-ratio: 1) {
 
     .wrapper_soc_icons {
         left: 60px;
@@ -236,8 +235,7 @@ a:hover {
 /* Tablets */
 @media screen 
   and (min-device-width: 768px) 
-  and (max-device-width: 1199px) 
-  and (-webkit-min-device-pixel-ratio: 1) {
+  and (max-device-width: 1199px) {
 
     .wrapper_soc_icons {
         left: 60px;
@@ -248,8 +246,7 @@ a:hover {
 /* Other */
 @media screen
     and (min-device-width: 500px) 
-    and (max-device-width: 767px)
-    and (-webkit-min-device-pixel-ratio: 2) {
+    and (max-device-width: 767px) {
 
     .wrapper_soc_icons {
         left: 60px;
@@ -260,8 +257,7 @@ a:hover {
 /* Portrait and Landscape */
 @media screen 
   and (min-device-width: 1px) 
-  and (max-device-width: 500px)
-  and (-webkit-min-device-pixel-ratio: 2) {
+  and (max-device-width: 500px) {
 
     p {
         font-size: 1.2em;
