@@ -247,6 +247,7 @@ span::after {
         justify-content: flex-start;
         align-content: center;
         padding: 10% 5%;
+        height: 100%;
     }
 
     h1 {
