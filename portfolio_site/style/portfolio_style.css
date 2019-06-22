@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic');
 
-* {
-    box-sizing: border-box;
-}
-
 body {
     display: flex;
     flex-direction: row;
@@ -35,6 +31,22 @@ nav a {
 
 nav a:hover {
     color: #00C853;
+    transition: all 0.3s ease;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 66px;
+    height: 2px;
+    background-color: black;
+    top: 16px;
+    left: 1px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover::after {
+    background-color: #00C853;
     transition: all 0.3s ease;
 }
 
@@ -301,14 +313,19 @@ span::after {
         left: 0;
     }
 
+    nav a {
+        color: #00C853;
+    }
+
     nav a:after {
         content: '';
         position: absolute;
         top: 7px;
+        left: 60px;
         width: 70%;
         height: 2px;
         margin-left: 15px;
-        background-color: #464646;
+        background-color: #00C853;
     }
 
     .copyright {

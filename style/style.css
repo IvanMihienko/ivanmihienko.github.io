@@ -64,6 +64,34 @@ a:hover {
 
 .wrapper_soc_icons a {
     font-size: 1em;
+    transition: all 0.3s ease;
+}
+
+.wrapper_soc_icons .icon-github-circled::after {
+    content: 'GitHub';
+}
+
+.wrapper_soc_icons .icon-telegram::after {
+    content: 'Telegram';
+}
+
+.wrapper_soc_icons .icon-vk::after {
+    content: 'Vk';
+}
+
+.wrapper_soc_icons .link_soc_icon::after {
+    font-weight: 500;
+    color: #00C853;
+    margin: 10px;
+    opacity: 0;
+    display: none;
+    transition: all 0.3s ease;
+}
+
+.wrapper_soc_icons .link_soc_icon:hover::after {
+    display: inline;
+    opacity: 1;
+    transition: all 0.3s ease;
 }
 
 .content_wrapper {
@@ -184,8 +212,8 @@ a:hover {
     background: #191D28;
     padding: 29px;
     margin: 0 10px;
-    width: 25%;
-    height: 40%;
+    width: 30%;
+    height: 50%;
     transition: all 0.3s ease;
 }
 
@@ -319,7 +347,7 @@ a:hover {
         margin-bottom: 35px;
         background-color: #161922;
         width: 100%;
-        height: auto;
+        height: 9rem;
     }
 
     .card img {
