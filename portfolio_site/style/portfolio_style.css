@@ -120,7 +120,7 @@ span::after {
 .card_wrapper {
     position: relative;
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: flex-start;
@@ -147,7 +147,7 @@ span::after {
 }
 
 .image svg {
-    width: 4em;
+    width: 4rem;
     margin: auto;
     transition: all 0.3s ease;
 }
