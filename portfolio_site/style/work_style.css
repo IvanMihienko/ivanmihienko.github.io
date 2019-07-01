@@ -150,24 +150,24 @@ article p {
 }
 
 @media screen 
-and (min-width: 760px)
-and (max-width: 900px) {
+and (min-device-width: 760px)
+and (max-device-width: 900px) {
     section {
         width: 65%;
     }
 }
 
 @media screen 
-and (min-width: 600px)
-and (max-width: 760px) {
+and (min-device-width: 600px)
+and (max-device-width: 760px) {
     section {
         width: 80%;
     }
 }
 
 @media screen 
-and (min-width: 480px)
-and (max-width: 600px) {
+and (min-device-width: 480px)
+and (max-device-width: 600px) {
     section {
         width: 95%;
     }
@@ -178,8 +178,8 @@ and (max-width: 600px) {
 }
 
 @media screen 
-and (min-width: 1px)
-and (max-width: 480px) {
+and (min-device-width: 1px)
+and (max-device-width: 480px) {
     section {
         width: 100%;
     }
