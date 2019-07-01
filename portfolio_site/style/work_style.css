@@ -12,6 +12,10 @@ body {
 
 }
 
+p {
+    margin: 0;
+}
+
 h1 {
     color: #464646;
     font-size: 1.5rem;
@@ -38,6 +42,7 @@ section {
 
 header {
     margin-bottom: 2rem;
+    overflow: hidden;
 }
 
 nav {
@@ -46,7 +51,7 @@ nav {
     justify-content: space-between;
     align-content: center;
     align-items: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 nav a:hover {
@@ -91,22 +96,21 @@ nav a svg:hover g polygon {
 .tegs {
     position: relative;
     width: 100%;
+    white-space: nowrap;
     height: auto;
     padding: 0 2%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-content: center;
 }
 
 .teg_item {
+    display: inline-block;
     background-color: #F5F5F5;
-    min-width: 23%;
+    white-space: nowrap;
+    min-width: 25%;
     width: auto;
     height: auto;
     padding: 15px 20px;
     margin: 0;
-    margin-right: 15px;
+    margin-right: 1rem;
     text-align: center;
     transition: all 0.3s ease;
 }
@@ -128,4 +132,86 @@ article {
     color: #7D7D7D;
     line-height: 2rem;
     font-weight: 500;
+}
+
+article p {
+    margin-bottom: 2rem;
+}
+
+.img_holder {
+    width: 100%;
+    height: auto;
+}
+
+.img_holder img {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+@media screen 
+and (min-width: 760px)
+and (max-width: 900px) {
+    section {
+        width: 65%;
+    }
+}
+
+@media screen 
+and (min-width: 600px)
+and (max-width: 760px) {
+    section {
+        width: 80%;
+    }
+}
+
+@media screen 
+and (min-width: 480px)
+and (max-width: 600px) {
+    section {
+        width: 95%;
+    }
+
+    nav {
+        padding: 0 5%;
+    }
+}
+
+@media screen 
+and (min-width: 1px)
+and (max-width: 480px) {
+    section {
+        width: 100%;
+    }
+
+    .tegs {
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+
+    .img_holder {
+        padding: 0 5%;
+    }
+
+    nav {
+        padding: 0 5%;
+    }
+
+    .link_home {
+        margin-right: 20px;
+    }
+
+    .main_text {
+        padding: 0 5%;
+    }
+
+    article {
+        padding: 0 5%;
+    }
+
+    .img_holder {
+        background-color: #F4F4F4;
+    }
+
+
 }
