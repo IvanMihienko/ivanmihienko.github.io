@@ -83,7 +83,17 @@ nav a svg:hover g polygon {
     width: 100%;
     height: 30vh;
     margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
     background-color: #CBF9D5;
+}
+
+.main_image svg {
+    width: 4rem;
+    margin: auto;
 }
 
 .main_text {
@@ -141,10 +151,12 @@ article p {
 .img_holder {
     width: 100%;
     height: auto;
+    margin-bottom: 2rem;
 }
 
 .img_holder img {
     position: relative;
+    margin: auto;
     width: 100%;
     height: auto;
 }
@@ -178,7 +190,7 @@ and (max-device-width: 600px) {
 }
 
 @media screen 
-and (min-device-width: 1px)
+and (min-device-width: 1px) 
 and (max-device-width: 480px) {
     section {
         width: 100%;
