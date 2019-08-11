@@ -18,8 +18,8 @@ p {
     background-image: url(../img/image.jpg);
     background-repeat: no-repeat;
     background-position: bottom right;
-    background-blend-mode: screen;
-    background-size: auto 100%;
+    background-blend-mode: lighten;
+    background-size: auto 110%;
     display: flex;
     justify-content: center;
     align-items: center;
