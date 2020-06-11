@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700');
 body {
     font-family: 'Montserrat', sans-serif;
+    background-color: #F9FAFA;
+    margin: 0;
+    padding: 0 5%;
+    height: 100vh;
+    width: 100%;
+    font-size: 14px;
 }
 
 @font-face {
@@ -13,14 +19,13 @@ body {
 
 * {
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 [class^="icon-"]:before, [class*=" icon-"]:before {
   font-family: "fontello";
   font-style: normal;
   font-weight: normal;
-  speak: none;
- 
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
@@ -96,7 +101,13 @@ body {
   
   h1 {
     font-size: 2em;
-    margin: 0.67em 0;
+    margin: 0;
+  }
+
+  h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
   }
   
   /* Grouping content
@@ -129,8 +140,9 @@ body {
    * Remove the gray background on active links in IE 10.
    */
   
-  a {
+  p, a {
     background-color: transparent;
+    margin: 0;
   }
   
   /**
@@ -192,6 +204,14 @@ body {
   
   sup {
     top: -0.5em;
+  }
+
+  svg {
+    transition: all 0.3s ease;
+  }
+
+  path {
+    transition: all 0.3s ease;
   }
   
   /* Embedded content
