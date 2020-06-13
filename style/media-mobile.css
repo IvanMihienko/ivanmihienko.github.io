@@ -46,11 +46,15 @@ body {
 }
 
 .services_button {
-    padding: 0 20px;
+    padding: 0 20px 0 0;
     overflow: hidden;
     width: 100%;
     height: 150px;
     margin-bottom: 20px;
+}
+
+.services_button svg {
+    left: -10px;
 }
 
 .portfolio_button {

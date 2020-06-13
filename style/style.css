@@ -78,8 +78,8 @@ body {
 
 .services_button {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    position: relative;
+    flex-direction: row-reverse;
     align-items: center;
     background: #F4F4F4;
     color: #464646;
@@ -92,6 +92,13 @@ body {
     grid-column-start: 2;
     grid-column-end: 4;
     transition: all 0.3s ease;
+}
+
+.services_button svg {
+    position: absolute;
+    left: -6px;
+    width: 200px;
+    height: 180px;
 }
 
 .services_button:hover {
