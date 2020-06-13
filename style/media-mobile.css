@@ -1,0 +1,100 @@
+body {
+    padding: 40px 20px;
+    height: auto;
+}
+
+.logo_wrapper {
+    display: none;
+}
+
+.grid_wrapper {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text_main_wrapper {
+    display: none;
+}
+
+.hello_text {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    margin-bottom: 40px;
+}
+
+.hello_text h3 {
+    color: #00C853;
+    font-weight: 600;
+}
+
+.hello_text h3:before {
+    content: '‒';
+    color: #00C853;
+    margin-right: 20px;
+}
+
+.hello_text h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #464646;
+    margin-top: 20px;
+    width: 50%;
+}
+
+.services_button {
+    padding: 0 63px 0 20px;
+    overflow: hidden;
+    width: 100%;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.portfolio_button {
+    padding: 0 20px 0 63px;
+    overflow: hidden;
+    width: 100%;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.about_button {
+    padding: 0 63px 0 20px;
+    overflow: hidden;
+    width: 100%;
+    height: 150px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    background: #F4F4F4;
+    color: #464646;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.contact_row {
+    margin-top: 20px;
+    position: relative;
+    flex-direction: column;
+    white-space: nowrap;
+    width: 100%; 
+    overflow-x: auto;
+}
+
+.contact_text_wrapper {
+    display: block;
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.contact_links_wrapper {
+    position: relative;
+    width: 100%;
+    overflow-x: auto;
+}

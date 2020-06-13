@@ -3,6 +3,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: stretch;
+    height: 100vh;
+    padding: 0 5%;
 }
 
 .logo_wrapper {
@@ -226,7 +228,7 @@ body {
 }
 
 .contact_row {
-    display: inline-flex;
+    display: flex;
     margin-top: 20px;
     width: 100%;
 }
@@ -256,9 +258,11 @@ body {
     justify-content: center;
     align-items: center;
     font-weight: 600;
+    padding: auto;
     font-size: 1em;
     height: 30px;
     width: 90px;
+    min-width: 90px;
     margin: 0 20px 0 0;
     
 }
