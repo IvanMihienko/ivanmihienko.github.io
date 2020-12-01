@@ -1,10 +1,41 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700');
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Muller', sans-serif;
     background-color: #F9FAFA;
     margin: 0;
     width: 100%;
-    font-size: 14px;
+    font-size: 16px;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: url('../font/MullerMedium.otf') format('otf');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: url('../font/MullerBold.otf') format('otf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: url('../font/mullerbold-webfont.woff2') format('woff2'),
+       url('../font/mullerbold-webfont.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: url('../font/mullermedium-webfont.woff2') format('woff2'),
+       url('../font/mullermedium-webfont.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+
 }
 
 @font-face {
@@ -138,9 +169,16 @@ body {
    * Remove the gray background on active links in IE 10.
    */
   
-  p, a {
+  p, a, h1, h2, h3, span {
     background-color: transparent;
     margin: 0;
+    color: #525252;
+    opacity: 100%;
+  }
+
+  p, a, span {
+    font-weight: 500;
+    font-size: 1em;
   }
   
   /**
