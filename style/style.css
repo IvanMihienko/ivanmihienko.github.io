@@ -1,50 +1,92 @@
 body {
-    background: #fbfbfb;
-    height: 200vh;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+    background: #EEEEEE;
+    height: 100vh;
     transform: scaleZ(0px);
 }
+
+.cursor {
+    position: absolute;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    top: -50px;
+    pointer-events: none;
+    z-index: 999;
+}
+
+.cursor span {
+    visibility: visible;
+    margin: 4px;
+    padding: 7px;
+    background-color: #080A0A;
+    color: white;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+.links {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 0 60px 0;
+    width: 15%;
+    border-right: 2px rgba(8, 10, 10, 0.05) solid;;
+}
+
+.logo svg{
+    fill: #080A0A;;
+}
+
+svg {
+    fill: #080A0A;
+}
+
+.links_icons {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.links_icons a {
+    height: 30px;
+    margin-bottom: 5px;
+}
+
+.links_icons a img {
+    height: 22px;
+}
+
 
 .bg_blur {
     position: absolute;
     width: 100%;
-    height: 100vh;
+    height: 100vh;   
+    filter: blur(140px);
+    z-index: -1;
 }
 
 .blue_vector {
     position: absolute;
     top: 0;
-    left: 22%;
-    filter: blur(250px);
+    left: 20%;
 }
 
 .green_vector {
     position: absolute;
-    top: 0;
-    left: 60%;
-    filter: blur(250px);
+    top: 5%;
+    right: 10%;
 }
 
 .yellow_vector {
     position: absolute;
-    top: 30%;
+    top: 70%;
     left: 50%;
-    filter: blur(250px);
-}
-
-nav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    top: 0;
-    padding: 0 5%;
-    width: 100%;
-    height: 90px;
-    background: rgba(255, 255, 255, 0.6);
-    backdrop-filter: blur(20px);
-    border: 1px solid rgba(255,255,255, 0.4);
-    z-index: 999;
 }
 
 .internal_links {
@@ -69,39 +111,27 @@ nav {
     margin: 0 9px;
 }
 
-nav a::after {
-    content: "";
-    display: block;
-    position: relative;
-    width: 0;
-    opacity: 0;
-    height: 1.5px;
-    border: 1,5px solid;
-    border: 1,5px solid;
-    background: #525252;
-    transition: all 0.1s ease-in 0s;
-}
-
-nav a:hover:after {
-    width: 100%;
-    opacity: 80%;
-}
-
 section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0 5%;
+    padding: 60px 60px 0 60px;
     width: 100%;
     height: 100vh;
 }
 
-.text {
+.top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     width: 100%;
-    z-index: 2;
+    top: 0;
 }
 
-.text h1 {
-    font-size: 4em;
+.now_track {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;  
+}
+
+.track_meta {
+    margin-left: 15px;
 }
